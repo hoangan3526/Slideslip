@@ -1,4 +1,5 @@
 .slidezy-wrapper {
+  position: relative;
   width: 100%;
   overflow: hidden;
 }
@@ -26,9 +27,7 @@
 .slidezy-prev {
   left: 10px;
 }
-.slidezy-content {
-  position: relative;
-}
+
 .slidezy-next {
   right: 10px;
 }

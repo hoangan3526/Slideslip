@@ -1,4 +1,5 @@
 .slidezy-wrapper {
+  position: relative;
   width: 100%;
   overflow: hidden;
 }
@@ -26,9 +27,7 @@
 .slidezy-prev {
   left: 10px;
 }
-.slidezy-content {
-  position: relative;
-}
+
 .slidezy-next {
   right: 10px;
 }
@@ -40,12 +39,4 @@
   margin-top: 8px;
 }
 .slidezy-dot {
-  width: 8px;
-  height: 8px;
-  border: none;
-  border-radius: 50%;
-  background-color: #ccc;
-}
-.slidezy-dot.active {
-  background-color: #333;
 }

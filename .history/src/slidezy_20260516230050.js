@@ -88,18 +88,18 @@ Slidezy.prototype.createNav = function () {
   this.container.append(this.navWrapper);
 };
 Slidezy.prototype.createControls = function () {
-  this.prevBtn = document.createElement("button");
-  this.nextBtn = document.createElement("button");
+  this.prevbtn = document.createElement("button");
+  this.nextbtn = document.createElement("button");
 
-  this.prevBtn.textContent = "<";
-  this.nextBtn.textContent = ">";
+  this.prevbtn.textContent = "<";
+  this.nextbtn.textContent = ">";
 
-  this.prevBtn.classList.add("slidezy-prev");
-  this.nextBtn.classList.add("slidezy-next");
+  this.prevbtn.classList.add("slidezy-prev");
+  this.nextbtn.classList.add("slidezy-next");
 
   this.content.append(this.prevBtn, this.nextBtn);
-  this.prevBtn.onclick = () => this.moveSlide(-1);
-  this.nextBtn.onclick = () => this.moveSlide(1);
+  this.prevbtn.onclick = () => this.moveSlide(-1);
+  this.nextbtn.onclick = () => this.moveSlide(1);
 };
 Slidezy.prototype.moveSlide = function (step) {
   if (this._isAnimating) return;
